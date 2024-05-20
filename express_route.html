@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure ExpressRoute Quiz</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .quiz-container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .feedback {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: white;
+        }
+        .navbar {
+            background-color: #0078d7;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#" style="color:white;">ExpressRoute Quiz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://krishnacloud.school/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/krishnavenk/">Linked Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://learn.microsoft.com/en-us/training/azure/">Azure Learn</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="past_quizzes.html">Past Quizzes</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="quiz-container">
+        <h1>Azure ExpressRoute Quiz</h1>
+        <form id="quizForm">
+            <div class="form-group">
+                <label for="q1">1. What is the primary use of ExpressRoute?</label>
+                <select class="form-control" id="q1" name="q1">
+                    <option value="">Select an answer</option>
+                    <option value="a">A web browser</option>
+                    <option value="b">A cloud computing service</option>
+                    <option value="c">Extending on-premises networks into the Microsoft Cloud</option>
+                    <option value="d">A programming language</option>
+                </select>
+                <p class="feedback" id="feedback-q1"></p>
+            </div>
+            <div class="form-group">
+                <label for="q2">2. What protocol does ExpressRoute use for dynamic routing?</label>
+                <select class="form-control" id="q2" name="q2">
+                    <option value="">Select an answer</option>
+                    <option value="a">OSPF</option>
+                    <option value="b">RIP</option>
+                    <option value="c">BGP</option>
+                    <option value="d">EIGRP</option>
+                </select>
+                <p class="feedback" id="feedback-q2"></p>
+            </div>
+            <div class="form-group">
+                <label for="q3">3. What type of peering allows access to Microsoft online services like Office 365?</label>
+                <select class="form-control" id="q3" name="q3">
+                    <option value="">Select an answer</option>
+                    <option value="a">Private Peering</option>
+                    <option value="b">Public Peering</option>
+                    <option value="c">Microsoft Peering</option>
+                    <option value="d">Service Peering</option>
+                </select>
+                <p class="feedback" id="feedback-q3"></p>
+            </div>
+            <div class="form-group">
+                <label for="q4">4. Which connectivity model allows connecting through point-to-point Ethernet links?</label>
+                <select class="form-control" id="q4" name="q4">
+                    <option value="">Select an answer</option>
+                    <option value="a">Collocated at Cloud Exchange</option>
+                    <option value="b">Point-to-Point Ethernet Connections</option>
+                    <option value="c">Any-to-any (IPVPN) Networks</option>
+                    <option value="d">ExpressRoute Direct</option>
+                </select>
+                <p class="feedback" id="feedback-q4"></p>
+            </div>
+            <div class="form-group">
+                <label for="q5">5. What feature of ExpressRoute improves the data path performance between on-premises and Azure?</label>
+                <select class="form-control" id="q5" name="q5">
+                    <option value="">Select an answer</option>
+                    <option value="a">ExpressRoute Global Reach</option>
+                    <option value="b">ExpressRoute Traffic Collector</option>
+                    <option value="c">ExpressRoute FastPath</option>
+                    <option value="d">ExpressRoute Peering</option>
+                </select>
+                <p class="feedback" id="feedback-q5"></p>
+            </div>
+            <div class="form-group">
+                <label for="q6">6. What is the primary benefit of using ExpressRoute over a typical VPN?</label>
+                <select class="form-control" id="q6" name="q6">
+                    <option value="">Select an answer</option>
+                    <option value="a">Lower cost</option>
+                    <option value="b">Faster, more reliable, and secure</option>
+                    <option value="c">Easier setup</option>
+                    <option value="d">More features</option>
+                </select>
+                <p class="feedback" id="feedback-q6"></p>
+            </div>
+            <div class="form-group">
+                <label for="q7">7. Which feature allows linking multiple on-premises networks together through ExpressRoute?</label>
+                <select class="form-control" id="q7" name="q7">
+                    <option value="">Select an answer</option>
+                    <option value="a">ExpressRoute Direct</option>
+                    <option value="b">ExpressRoute FastPath</option>
+                    <option value="c">ExpressRoute Global Reach</option>
+                    <option value="d">ExpressRoute Traffic Collector</option>
+                </select>
+                <p class="feedback" id="feedback-q7"></p>
+            </div>
+            <div class="form-group">
+                <label for="q8">8. What does ExpressRoute Traffic Collector enable?</label>
+                <select class="form-control" id="q8" name="q8">
+                    <option value="">Select an answer</option>
+                    <option value="a">Sampling of network flows</option>
+                    <option value="b">Direct connection to Microsoft global network</option>
+                    <option value="c">Improved data path performance</option>
+                    <option value="d">Access to Microsoft online services</option>
+                </select>
+                <p class="feedback" id="feedback-q8"></p>
+            </div>
+            <div class="form-group">
+                <label for="q9">9. How many BGP connections are required for an ExpressRoute circuit?</label>
+                <select class="form-control" id="q9" name="q9">
+                    <option value="">Select an answer</option>
+                    <option value="a">1</option>
+                    <option value="b">2</option>
+                    <option value="c">3</option>
+                    <option value="d">4</option>
+                </select>
+                <p class="feedback" id="feedback-q9"></p>
+            </div>
+            <div class="form-group">
+                <label for="q10">10. What is a key component of an ExpressRoute connection?</label>
+                <select class="form-control" id="q10" name="q10">
+                    <option value="">Select an answer</option>
+                    <option value="a">Microsoft Edge Routers (MSEEs)</option>
+                    <option value="b">Azure Virtual Network</option>
+                    <option value="c">Azure Data Lake</option>
+                    <option value="d">Azure Cosmos DB</option>
+                </select>
+                <p class="feedback" id="feedback-q10"></p>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="submitQuiz()">Submit</button>
+            <p id="result"></p>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function submitQuiz() {
+            const correctAnswers = ['c', 'c', 'c', 'b', 'c', 'b', 'c', 'a', 'b', 'a'];
+            const explanations = [
+                "ExpressRoute is used for extending on-premises networks into the Microsoft Cloud over a private connection.",
+                "ExpressRoute uses BGP (Border Gateway Protocol) for dynamic routing.",
+                "Microsoft Peering allows access to Microsoft online services such as Office 365, Dynamics 365, etc.",
+                "Point-to-Point Ethernet Connections allow connecting through point-to-point Ethernet links.",
+                "ExpressRoute FastPath improves the data path performance by sending network traffic directly to the Virtual Machines in the Virtual Network, bypassing the gateway.",
+                "ExpressRoute is faster, more reliable, and secure than typical VPN solutions.",
+                "ExpressRoute Global Reach allows linking multiple on-premises networks together.",
+                "ExpressRoute Traffic Collector enables sampling of network flows.",
+                "An ExpressRoute circuit requires two BGP connections.",
+                "Microsoft Edge Routers (MSEEs) are key components of an ExpressRoute connection."
+            ];
+            const links = [
+                "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+                "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-routing",
+                "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-routing",
+                "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-connectivity-models",
+                "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-virtual-network-gateways",
+                "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction",
+                "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-global-reach",
+                "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-monitoring",
+                "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-circuit-peerings",
+                "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-terminology"
+            ];
+
+            let score = 0;
+
+            for (let i = 1; i <= 10; i++) {
+                const question = document.querySelector(`select[name="q${i}"]`);
+                const feedback = document.getElementById(`feedback-q${i}`);
+                if (question && question.value) {
+                    if (question.value === correctAnswers[i - 1]) {
+                        score++;
+                        feedback.innerText = "Correct!";
+                        feedback.style.color = "green";
+                    } else {
+                        feedback.innerHTML = `Incorrect. The correct answer is "${correctAnswers[i - 1]}". ${explanations[i - 1]}. Learn more at <a href="${links[i - 1]}" target="_blank">Azure Learn</a>`;
+                        feedback.style.color = "red";
+                    }
+                } else {
+                    feedback.innerText = `Please select an answer.`;
+                    feedback.style.color = "orange";
+                }
+            }
+
+            document.getElementById('result').innerText = `You scored ${score} out of 10.`;
+        }
+    </script>
+</body>
+</html>
